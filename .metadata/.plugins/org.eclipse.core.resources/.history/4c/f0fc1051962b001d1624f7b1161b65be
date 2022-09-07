@@ -1,0 +1,5 @@
+package com.chaitanya.microservices.currencyexchangeservice.model;
+
+public class CurrencyExchange {
+
+}

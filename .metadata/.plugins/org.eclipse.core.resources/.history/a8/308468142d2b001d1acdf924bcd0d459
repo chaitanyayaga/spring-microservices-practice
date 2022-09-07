@@ -1,0 +1,5 @@
+package com.chaitanya.microservices.limitsservice.configuration;
+
+public class Configuration {
+
+}

@@ -1,0 +1,5 @@
+package com.chaitanya.microservices.limitsservice.controller;
+
+public class Limits {
+
+}

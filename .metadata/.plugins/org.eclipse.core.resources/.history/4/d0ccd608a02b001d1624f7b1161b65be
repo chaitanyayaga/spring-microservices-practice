@@ -1,0 +1,17 @@
+package com.chaitanya.microservices.currencyconversionservice.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.chaitanya.microservices.currencyexchangeservice.model.CurrencyExchange;
+
+@FeignClient(name="currency-excahnge" , url ="localhost:8000")
+public interface CurrencyExchangeProxy {
+	
+	@GetMapping("/currency-exchange/from/{from}/to/{to}")
+	public CurrencyConversion retrieveExchangevalue(
+			@PathVariable String from,
+			@PathVariable String to);
+		
+
+}
